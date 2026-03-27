@@ -2,13 +2,24 @@
 
 Fast-paced arcade web game where you click/tap insects before they escape.
 
+## Live Demo
+
+GitHub Pages URL (after enabling Pages in repository settings):
+
+- https://justinsecurities-bit.github.io/AntKiller/
+
+## Screenshot
+
+![Insect Smash gameplay screenshot](./assets/insect-smash-screenshot.svg)
+
 ## Features
 
 - 3 insect types with different speed/points (`fly`, `mosquito`, `ant`)
 - Multiple movement patterns (straight, zig-zag, jitter)
-- Combo multiplier and quick-reaction bonus scoring
+- Point system: score is the number of insects smashed in one round
+- Combo tracking for streak feedback
 - Progressive difficulty (spawn rate + speed + occasional multi-spawn)
-- 3 lives, game over state, and 60-second session
+- 30-second game session
 - Start, gameplay, and game-over screens
 - Floating score text and particle feedback
 - Light synth audio for hit/miss/game-over and looping background theme
@@ -40,12 +51,16 @@ This project is static and deploys directly to:
 - Netlify
 - GitHub Pages
 
+### GitHub Pages Setup (one-time)
+
+1. Open repository settings: `Settings -> Pages`.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Push any commit to `main` (or re-run the `Deploy static content to Pages` workflow in Actions).
+4. Your public game URL will be:
+   - `https://justinsecurities-bit.github.io/AntKiller/`
+
 ## File Structure
 
 - `index.html` - screens + canvas + HUD layout
 - `styles.css` - responsive UI styling
 - `script.js` - game loop, entities, scoring, difficulty, rendering, audio
-
-# AntKiller
-
-# AntKiller
